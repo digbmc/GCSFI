@@ -1,19 +1,36 @@
 project:
+  title: "GCSFI"
   type: website
   output-dir: docs
 
 website:
   title: "GCSFI"
+  back-to-top-navigation: true
+  page-footer: 
+    background: "#426d58"
+    left: 
+      - text: About 
+        href: about.qmd
   navbar:
+    title: false 
+    search: true 
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: dataset.qmd
+        text: Dataset
+      - href: about.qmd
+        text: About
+    right: 
+      - icon: github
+        href: https://github.com/digbmc/GCSFI
+      
 
 format:
   html:
+    include-before-body: header.html
     theme:
-      - lux 
+      - united 
       - brand
     css: styles.css
     toc: false

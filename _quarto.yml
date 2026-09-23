@@ -16,6 +16,8 @@ website:
     title: false 
     search: true 
     left:
+      - text: Menu 
+        href: menu.html
       - href: index.qmd
         text: Home
       - href: dataset.qmd

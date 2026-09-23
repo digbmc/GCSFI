@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "GCSFI",
-    "section": "",
-    "text": "Greater Carribean Short Fiction Index\n\n\n\n\n\nThis is a test for GCSFI\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Back to top"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -19,5 +12,12 @@
     "title": "GCSFI Dataset",
     "section": "",
     "text": "Greater Carribean Short Fiction Index\n\n\n\n\n\n\n\n\n\nimport {generateTabulatorTableFromCSV} from \"8bb63a6cde9addff\"\n\n\n\n\n\n\n\ngenerateTabulatorTableFromCSV(\n  \"#my-table\",                          // CSS selector for the table container\n     \"\" ,      // &lt;-- plug in your CSV URL or file path here\n\n  {\n    displayedColumns: [\"\"                 // columns to show (in order)\n      \n    ],\n\n    numericColumns: [\"\"],       // columns to treat as numbers (enables range filters)\n\n    categoryColumns: [\"\"],      // columns to treat as categories (enables dropdown filters)\n\n    sortColumns: [\"\"],          // default sort column(s)\n    sortOrders: [\"asc\"]                 // \"asc\" or \"desc\" for each sort column\n  }\n);\n\n\n\n\n\n\n\n\n\n\nhtml`&lt;div id='button-container2'&gt;\n  &lt;button id=\"download-raw\"&gt;&lt;i class=\"fas fa-download\"&gt;&lt;/i&gt;&lt;/i&gt; Download Full Data&lt;/button&gt;\n  &lt;button id=\"copy-url\"&gt;&lt;i class=\"fas fa-copy\"&gt;&lt;/i&gt; Copy Full Data URL&lt;/button&gt;\n&lt;/div&gt;`\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GCSFI",
+    "section": "",
+    "text": "Greater Carribean Short Fiction Index\n\n\n\n\n\nThis is a test for GCSFI\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n Back to top"
   }
 ]

@@ -12,6 +12,7 @@ website:
       - text: About 
         href: about.qmd
   navbar:
+    background: "#426d58"
     title: false 
     search: true 
     left:

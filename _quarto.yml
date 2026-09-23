@@ -31,6 +31,8 @@ website:
 
 format:
   html:
+    grid:
+      body-width: 1200px
     include-before-body: header.html
     theme:
       - united 

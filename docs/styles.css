@@ -26,6 +26,7 @@
   /* Neutral Colors */
   --color-bg: #eee1c7;
   --color-text: #1c1816;
+  --light-text: #f1eadc;
 }
 
 html,
@@ -53,11 +54,19 @@ main.content,
     margin-left: calc(50% - 50vw);
     
     background-color: #deb425;
+    border-bottom:#b21f24 3px solid;
     box-shadow: var(--shadow-elevation-low);
 
     text-align:left;
     padding-left:5rem;
     color: #1c1816;  
+}
+
+main.content,
+#quarto-content,#quarto-document-content {
+  width: 100%;
+  margin-left:0;
+  margin-right: 0;
 }
 
 #quarto-header {
@@ -69,4 +78,31 @@ main.content,
     font-size: 1.2rem !important;
 }
 
+.navbar-nav.navbar-nav-scroll.me-auto {
+    gap: 2rem;
+    padding-left: 3rem;
+}
 
+.title {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem; 
+}
+.btn.btn-outline-primary {
+  color:#8ea35a;
+  border-color:#8ea35a;
+}
+
+.btn.btn-outline-primary:hover{
+  background-color: #8ea35a;
+  color: #f1eadc;
+}
+
+.btn.btn-outline-primary:active{
+  border:#426d58 1px solid;
+}

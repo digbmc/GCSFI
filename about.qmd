@@ -3,9 +3,7 @@ title: "About"
 ---
 <div class="about-button-container">
 <a type="button" class="btn btn-outline-primary" href="#Project">Project</a>
-
 <a type="button" class="btn btn-outline-primary" href="#Team">Team</a>
-
 <a type="button" class="btn btn-outline-primary" href="#Sources">Sources</a>
 </div>
 

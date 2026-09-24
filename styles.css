@@ -106,3 +106,10 @@ main.content,
 .btn.btn-outline-primary:active{
   border:#426d58 1px solid;
 }
+
+.about-button-container {
+    display: flex;
+    column-gap: 5em;
+    margin-top: 5rem; 
+    justify-content: center;
+}

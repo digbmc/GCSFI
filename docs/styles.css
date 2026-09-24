@@ -108,8 +108,11 @@ main.content,
 }
 
 .about-button-container {
-    display: flex;
-    column-gap: 5em;
+  display: flex;
     margin-top: 5rem; 
     justify-content: center;
+}
+.about-button-container p {
+  display: flex;
+  gap: 2.5rem !important;
 }

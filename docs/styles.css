@@ -73,11 +73,13 @@ main.content,
     border-bottom: #375c4a 5px solid;
 }
 
-.navbar .nav-link[href*="menu.html"] {
+span.nav-link > span:nth-child(1) {
     font-weight: bold;
-    font-size: 1.2rem !important;
+     font-size: 1.5rem !important;
 }
-
+li.nav-item:nth-child(2) > a:nth-child(1){
+  padding-bottom: 0;
+}
 .navbar-nav.navbar-nav-scroll.me-auto {
     gap: 2rem;
     padding-left: 3rem;

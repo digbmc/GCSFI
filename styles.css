@@ -116,3 +116,19 @@ main.content,
   display: flex;
   gap: 2.5rem !important;
 }
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  outline: none;
+}
+
+.accordion {
+  --bs-accordion-active-bg: #FFE79E;      /* your peach */
+  --bs-accordion-active-color: #4a1f12;   /* your text */
+}
+
+.accordion-button:focus, .accordion-button:focus-visible, .accordion-item {
+  box-shadow: none !important;
+}
+ 

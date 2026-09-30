@@ -1,5 +1,8 @@
 ---
 title: "GCSFI Dataset"
+format:
+  html:
+    anchor-sections: false
 ---
 <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
 <script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
@@ -41,4 +44,51 @@ html`<div id='button-container2'>
   <button id="download-raw"><i class="fas fa-download"></i></i> Download Full Data</button>
   <button id="copy-url"><i class="fas fa-copy"></i> Copy Full Data URL</button>
 </div>`
+```
+
+## How to Use 
+
+Aliquam arcu eros, rhoncus porttitor nisl in, dapibus congue lorem. Nam eu justo ut sem vestibulum pretium. Etiam id lectus lacinia, fringilla nisl sed, mollis ipsum. Cras sollicitudin turpis eget enim venenatis congue et eu neque. Nullam pretium erat at elit commodo, quis ultricies lacus semper. Duis at metus vulputate, sollicitudin ante sed, ultrices dui. Nunc maximus pretium tortor at lobortis. Pellentesque dictum suscipit risus, non sodales dui aliquam id. Sed fermentum est massa, ac interdum eros venenatis quis. Vestibulum posuere finibus massa, eget tristique ante sollicitudin id. Suspendisse tempus nisi laoreet, congue urna ac, tincidunt magna. Vestibulum rutrum ut leo vitae luctus. Proin urna quam, consectetur at imperdiet quis, blandit ut est. 
+
+## Columns 
+
+```{=html}
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Venue 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+        The venue column contains information about where the story was published. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Topic
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+        The topic column contains data that.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Plot
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+        The plot column. 
+      </div>
+    </div>
+  </div>
+</div>
 ```

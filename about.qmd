@@ -18,8 +18,12 @@ Ut maximus lacus vitae augue commodo, id tristique augue tempus. Proin ultrices 
 
 <section id="Team">
     <h1>Team</h1>
+<div class="team-member"><h3>Name</h3> Project Manager</div>
+<h3>Name</h3> Data Entry 
+<h3>Name</h3>
 </section>
 
 <section id="Sources">
     <h1>Sources</h1>
+
 </section>

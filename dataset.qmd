@@ -4,6 +4,7 @@ format:
   html:
     anchor-sections: false
 ---
+<br><br>
 <link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
 <script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
 <script src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>
@@ -24,7 +25,7 @@ generateTabulatorTableFromCSV(
     displayedColumns: [
       "Title", 
       "Venue", 
-      "Published in", 
+      "Published in ", 
       "Year", 
       "Author Name (first last as published)",
       "Nationality or Associated Country", 
@@ -43,7 +44,8 @@ generateTabulatorTableFromCSV(
     categoryColumns: [""],      // columns to treat as categories (enables dropdown filters)
 
     sortColumns: ["Venue"],          // default sort column(s)
-    sortOrders: ["asc"]                 // "asc" or "desc" for each sort column
+    sortOrders: ["asc"],                 // "asc" or "desc" for each sort column
+    
   }
 );
 ```

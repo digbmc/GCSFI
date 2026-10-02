@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Caacupe+One&family=Special+Gothic+Condensed+One&display=swap');
+
 :root {
   --shadow-color: 40deg 25% 55%;
   --shadow-elevation-low:
@@ -34,6 +36,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #E7E6DA;
+  font-family: "Aleo", serif;
 }
 
 main.content,
@@ -60,6 +63,7 @@ main.content,
     text-align:left;
     padding-left:5rem;
     color: #1c1816;  
+    font-family: "Caacupe One", sans-serif;  
 }
 
 main.content,
@@ -71,11 +75,13 @@ main.content,
 
 #quarto-header {
     border-bottom: #375c4a 5px solid;
+    font-family: "Special Gothic Condensed One", sans-serif;
 }
 
 span.nav-link > span:nth-child(1) {
     font-weight: bold;
      font-size: 1.5rem !important;
+     font-family: "Caacupe One", sans-serif;
 }
 li.nav-item:nth-child(2) > a:nth-child(1){
   padding-bottom: 0;
@@ -87,6 +93,7 @@ li.nav-item:nth-child(2) > a:nth-child(1){
 
 .title {
   text-align: center;
+  font-family: "Special Gothic Condensed One", sans-serif;
 }
 
 .button-container {
@@ -133,4 +140,11 @@ li.nav-item:nth-child(2) > a:nth-child(1){
 .accordion-button:focus, .accordion-button:focus-visible, .accordion-item {
   box-shadow: none !important;
 }
- 
+
+#my-table{
+    border:#b21f24 2px solid;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    box-shadow: var(--shadow-elevation-medium);
+}
+

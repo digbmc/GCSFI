@@ -18,25 +18,39 @@ import {generateTabulatorTableFromCSV} from "8bb63a6cde9addff"
 //| output: false
 generateTabulatorTableFromCSV(
   "#my-table",                          // CSS selector for the table container
-     "" ,      // <-- plug in your CSV URL or file path here
+     "https://raw.githubusercontent.com/annika-bergstrom/csv-data-/refs/heads/main/Greater%20Caribbean%20Short%20Fiction%20Index%20-%20Cuentos%20.csv",      // <-- plug in your CSV URL or file path here
 
   {
-    displayedColumns: [""                 // columns to show (in order)
+    displayedColumns: [
+      "Title", 
+      "Venue", 
+      "Published in", 
+      "Year", 
+      "Author Name (first last as published)",
+      "Nationality or Associated Country", 
+      "Plot Description", 
+      "Thematic Keywords",  
+      "Scene setting",
+      "Characters",
+      "Issue URL",
+             // columns to show (in order)
       
     ],
 
-    numericColumns: [""],       // columns to treat as numbers (enables range filters)
+    numericColumns: [
+      "Year"],       // columns to treat as numbers (enables range filters)
 
     categoryColumns: [""],      // columns to treat as categories (enables dropdown filters)
 
-    sortColumns: [""],          // default sort column(s)
+    sortColumns: ["Venue"],          // default sort column(s)
     sortOrders: ["asc"]                 // "asc" or "desc" for each sort column
   }
 );
 ```
 
-:::{#my-table style="width: 900px"} 
+:::{#my-table style="width: 1200px; height: 2000px; align: center;"} 
 :::
+<br>
 
 ```{ojs}
 //| echo: false
@@ -45,6 +59,7 @@ html`<div id='button-container2'>
   <button id="copy-url"><i class="fas fa-copy"></i> Copy Full Data URL</button>
 </div>`
 ```
+<br><br>
 
 ## How to Use 
 

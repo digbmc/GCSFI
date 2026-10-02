@@ -202,41 +202,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell hidden">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="18" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 17;"><span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">generateTabulatorTableFromCSV</span>(</span>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"#my-table"</span><span class="op">,</span>                          <span class="co">// CSS selector for the table container</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>     <span class="st">""</span> <span class="op">,</span>      <span class="co">// &lt;-- plug in your CSV URL or file path here</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>     <span class="st">"https://raw.githubusercontent.com/annika-bergstrom/csv-data-/refs/heads/main/Greater%20Caribbean%20Short%20Fiction%20Index%20-%20Cuentos%20.csv"</span><span class="op">,</span>      <span class="co">// &lt;-- plug in your CSV URL or file path here</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="dt">displayedColumns</span><span class="op">:</span> [<span class="st">""</span>                 <span class="co">// columns to show (in order)</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="dt">numericColumns</span><span class="op">:</span> [<span class="st">""</span>]<span class="op">,</span>       <span class="co">// columns to treat as numbers (enables range filters)</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="dt">categoryColumns</span><span class="op">:</span> [<span class="st">""</span>]<span class="op">,</span>      <span class="co">// columns to treat as categories (enables dropdown filters)</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    <span class="dt">sortColumns</span><span class="op">:</span> [<span class="st">""</span>]<span class="op">,</span>          <span class="co">// default sort column(s)</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="dt">sortOrders</span><span class="op">:</span> [<span class="st">"asc"</span>]                 <span class="co">// "asc" or "desc" for each sort column</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="dt">displayedColumns</span><span class="op">:</span> [</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Title"</span><span class="op">,</span> </span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Venue"</span><span class="op">,</span> </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Published in"</span><span class="op">,</span> </span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Year"</span><span class="op">,</span> </span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Author Name (first last as published)"</span><span class="op">,</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Nationality or Associated Country"</span><span class="op">,</span> </span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Plot Description"</span><span class="op">,</span> </span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Thematic Keywords"</span><span class="op">,</span>  </span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Scene setting"</span><span class="op">,</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Characters"</span><span class="op">,</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Issue URL"</span><span class="op">,</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>             <span class="co">// columns to show (in order)</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="dt">numericColumns</span><span class="op">:</span> [</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Year"</span>]<span class="op">,</span>       <span class="co">// columns to treat as numbers (enables range filters)</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    <span class="dt">categoryColumns</span><span class="op">:</span> [<span class="st">""</span>]<span class="op">,</span>      <span class="co">// columns to treat as categories (enables dropdown filters)</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>    <span class="dt">sortColumns</span><span class="op">:</span> [<span class="st">"Venue"</span>]<span class="op">,</span>          <span class="co">// default sort column(s)</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>    <span class="dt">sortOrders</span><span class="op">:</span> [<span class="st">"asc"</span>]                 <span class="co">// "asc" or "desc" for each sort column</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display hidden">
 <div id="ojs-cell-2" data-nodetype="expression">
 
 </div>
 </div>
 </div>
-<div id="my-table" style="width: 900px">
+<div id="my-table" style="width: 1200px; height: 2000px; align: center;">
 
 </div>
+<p><br></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="42" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 41;"><span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div id='button-container2'&gt;</span></span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;button id="download-raw"&gt;&lt;i class="fas fa-download"&gt;&lt;/i&gt;&lt;/i&gt; Download Full Data&lt;/button&gt;</span></span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;button id="copy-url"&gt;&lt;i class="fas fa-copy"&gt;&lt;/i&gt; Copy Full Data URL&lt;/button&gt;</span></span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="56" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 55;"><span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div id='button-container2'&gt;</span></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;button id="download-raw"&gt;&lt;i class="fas fa-download"&gt;&lt;/i&gt;&lt;/i&gt; Download Full Data&lt;/button&gt;</span></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;button id="copy-url"&gt;&lt;i class="fas fa-copy"&gt;&lt;/i&gt; Copy Full Data URL&lt;/button&gt;</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="expression">
 
 </div>
 </div>
 </div>
+<p><br><br></p>
 <section id="how-to-use" class="level2">
 <h2 data-anchor-id="how-to-use">How to Use</h2>
 <p>Aliquam arcu eros, rhoncus porttitor nisl in, dapibus congue lorem. Nam eu justo ut sem vestibulum pretium. Etiam id lectus lacinia, fringilla nisl sed, mollis ipsum. Cras sollicitudin turpis eget enim venenatis congue et eu neque. Nullam pretium erat at elit commodo, quis ultricies lacus semper. Duis at metus vulputate, sollicitudin ante sed, ultrices dui. Nunc maximus pretium tortor at lobortis. Pellentesque dictum suscipit risus, non sodales dui aliquam id. Sed fermentum est massa, ac interdum eros venenatis quis. Vestibulum posuere finibus massa, eget tristique ante sollicitudin id. Suspendisse tempus nisi laoreet, congue urna ac, tincidunt magna. Vestibulum rutrum ut leo vitae luctus. Proin urna quam, consectetur at imperdiet quis, blandit ut est.</p>
@@ -299,7 +314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7Z2VuZXJhdGVUYWJ1bGF0b3JUYWJsZUZyb21DU1Z9IGZyb20gXCI4YmI2M2E2Y2RlOWFkZGZmXCJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImdlbmVyYXRlVGFidWxhdG9yVGFibGVGcm9tQ1NWKFxuICBcIiNteS10YWJsZVwiLCAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gQ1NTIHNlbGVjdG9yIGZvciB0aGUgdGFibGUgY29udGFpbmVyXG4gICAgIFwiXCIgLCAgICAgIC8vIDwtLSBwbHVnIGluIHlvdXIgQ1NWIFVSTCBvciBmaWxlIHBhdGggaGVyZVxuXG4gIHtcbiAgICBkaXNwbGF5ZWRDb2x1bW5zOiBbXCJcIiAgICAgICAgICAgICAgICAgLy8gY29sdW1ucyB0byBzaG93IChpbiBvcmRlcilcbiAgICAgIFxuICAgIF0sXG5cbiAgICBudW1lcmljQ29sdW1uczogW1wiXCJdLCAgICAgICAvLyBjb2x1bW5zIHRvIHRyZWF0IGFzIG51bWJlcnMgKGVuYWJsZXMgcmFuZ2UgZmlsdGVycylcblxuICAgIGNhdGVnb3J5Q29sdW1uczogW1wiXCJdLCAgICAgIC8vIGNvbHVtbnMgdG8gdHJlYXQgYXMgY2F0ZWdvcmllcyAoZW5hYmxlcyBkcm9wZG93biBmaWx0ZXJzKVxuXG4gICAgc29ydENvbHVtbnM6IFtcIlwiXSwgICAgICAgICAgLy8gZGVmYXVsdCBzb3J0IGNvbHVtbihzKVxuICAgIHNvcnRPcmRlcnM6IFtcImFzY1wiXSAgICAgICAgICAgICAgICAgLy8gXCJhc2NcIiBvciBcImRlc2NcIiBmb3IgZWFjaCBzb3J0IGNvbHVtblxuICB9XG4pO1xuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaHRtbGA8ZGl2IGlkPSdidXR0b24tY29udGFpbmVyMic+XG4gIDxidXR0b24gaWQ9XCJkb3dubG9hZC1yYXdcIj48aSBjbGFzcz1cImZhcyBmYS1kb3dubG9hZFwiPjwvaT48L2k+IERvd25sb2FkIEZ1bGwgRGF0YTwvYnV0dG9uPlxuICA8YnV0dG9uIGlkPVwiY29weS11cmxcIj48aSBjbGFzcz1cImZhcyBmYS1jb3B5XCI+PC9pPiBDb3B5IEZ1bGwgRGF0YSBVUkw8L2J1dHRvbj5cbjwvZGl2PmBcbiJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImltcG9ydCB7Z2VuZXJhdGVUYWJ1bGF0b3JUYWJsZUZyb21DU1Z9IGZyb20gXCI4YmI2M2E2Y2RlOWFkZGZmXCJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImdlbmVyYXRlVGFidWxhdG9yVGFibGVGcm9tQ1NWKFxuICBcIiNteS10YWJsZVwiLCAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gQ1NTIHNlbGVjdG9yIGZvciB0aGUgdGFibGUgY29udGFpbmVyXG4gICAgIFwiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FubmlrYS1iZXJnc3Ryb20vY3N2LWRhdGEtL3JlZnMvaGVhZHMvbWFpbi9HcmVhdGVyJTIwQ2FyaWJiZWFuJTIwU2hvcnQlMjBGaWN0aW9uJTIwSW5kZXglMjAtJTIwQ3VlbnRvcyUyMC5jc3ZcIiwgICAgICAvLyA8LS0gcGx1ZyBpbiB5b3VyIENTViBVUkwgb3IgZmlsZSBwYXRoIGhlcmVcblxuICB7XG4gICAgZGlzcGxheWVkQ29sdW1uczogW1xuICAgICAgXCJUaXRsZVwiLCBcbiAgICAgIFwiVmVudWVcIiwgXG4gICAgICBcIlB1Ymxpc2hlZCBpblwiLCBcbiAgICAgIFwiWWVhclwiLCBcbiAgICAgIFwiQXV0aG9yIE5hbWUgKGZpcnN0IGxhc3QgYXMgcHVibGlzaGVkKVwiLFxuICAgICAgXCJOYXRpb25hbGl0eSBvciBBc3NvY2lhdGVkIENvdW50cnlcIiwgXG4gICAgICBcIlBsb3QgRGVzY3JpcHRpb25cIiwgXG4gICAgICBcIlRoZW1hdGljIEtleXdvcmRzXCIsICBcbiAgICAgIFwiU2NlbmUgc2V0dGluZ1wiLFxuICAgICAgXCJDaGFyYWN0ZXJzXCIsXG4gICAgICBcIklzc3VlIFVSTFwiLFxuICAgICAgICAgICAgIC8vIGNvbHVtbnMgdG8gc2hvdyAoaW4gb3JkZXIpXG4gICAgICBcbiAgICBdLFxuXG4gICAgbnVtZXJpY0NvbHVtbnM6IFtcbiAgICAgIFwiWWVhclwiXSwgICAgICAgLy8gY29sdW1ucyB0byB0cmVhdCBhcyBudW1iZXJzIChlbmFibGVzIHJhbmdlIGZpbHRlcnMpXG5cbiAgICBjYXRlZ29yeUNvbHVtbnM6IFtcIlwiXSwgICAgICAvLyBjb2x1bW5zIHRvIHRyZWF0IGFzIGNhdGVnb3JpZXMgKGVuYWJsZXMgZHJvcGRvd24gZmlsdGVycylcblxuICAgIHNvcnRDb2x1bW5zOiBbXCJWZW51ZVwiXSwgICAgICAgICAgLy8gZGVmYXVsdCBzb3J0IGNvbHVtbihzKVxuICAgIHNvcnRPcmRlcnM6IFtcImFzY1wiXSAgICAgICAgICAgICAgICAgLy8gXCJhc2NcIiBvciBcImRlc2NcIiBmb3IgZWFjaCBzb3J0IGNvbHVtblxuICB9XG4pO1xuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaHRtbGA8ZGl2IGlkPSdidXR0b24tY29udGFpbmVyMic+XG4gIDxidXR0b24gaWQ9XCJkb3dubG9hZC1yYXdcIj48aSBjbGFzcz1cImZhcyBmYS1kb3dubG9hZFwiPjwvaT48L2k+IERvd25sb2FkIEZ1bGwgRGF0YTwvYnV0dG9uPlxuICA8YnV0dG9uIGlkPVwiY29weS11cmxcIj48aSBjbGFzcz1cImZhcyBmYS1jb3B5XCI+PC9pPiBDb3B5IEZ1bGwgRGF0YSBVUkw8L2J1dHRvbj5cbjwvZGl2PmBcbiJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

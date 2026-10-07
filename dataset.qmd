@@ -37,7 +37,10 @@ generateTabulatorTableFromCSV(
              // columns to show (in order)
       
     ],
-
+columnWidths: {
+    "Plot Description": "30px",
+    // Add others if you want
+  },
     numericColumns: [
       "Year"],       // columns to treat as numbers (enables range filters)
 

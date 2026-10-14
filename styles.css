@@ -57,7 +57,7 @@ main.content,
     margin-left: calc(50% - 50vw);
     
     background-color: #deb425;
-    border-bottom:#b21f24 3px solid;
+    border-bottom: #b21f24 3px solid;
     box-shadow: var(--shadow-elevation-low);
 
     text-align:left;
@@ -70,7 +70,7 @@ main.content,
   display: flex;
   height: 100px;
   padding: 0px;
-  margin: 0px;
+  margin-right: 2rem;
   scale: 1.5;
 }
 main.content,

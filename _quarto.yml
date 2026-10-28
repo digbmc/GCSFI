@@ -11,13 +11,14 @@ website:
     left: 
       - text: About 
         href: about.qmd
+      - text: Contact 
+        href: contact.qmd 
    
   navbar:
     background: "#426d58"
     title: false 
     search: true 
     left:
-      - text: Menu 
       - href: index.qmd
         text: Home
       - href: dataset.qmd

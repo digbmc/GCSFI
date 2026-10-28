@@ -61,7 +61,7 @@ main.content,
     box-shadow: var(--shadow-elevation-low);
 
     text-align:left;
-    padding-left:5rem;
+    padding-left: 0rem;
     color: #1c1816;  
     font-family: "Caacupe One", sans-serif;  
 }
@@ -70,7 +70,8 @@ main.content,
   display: flex;
   height: 100px;
   padding: 0px;
-  margin-right: 2rem;
+  margin-right: 0rem;
+  margin-left: 2rem;
   scale: 1.5;
 }
 main.content,

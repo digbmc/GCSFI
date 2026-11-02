@@ -27,8 +27,8 @@ website:
         text: About
     right: 
       - icon: github
-        href: https://github.com/digbmc/GCSFI
-      
+        href: https://github.com/digbmc/GCSFI     
+  favicon: "https://raw.githubusercontent.com/annika-bergstrom/csv-data-/refs/heads/main/GSCFIlogo3.svg"
 
 format:
   html:

@@ -63,7 +63,7 @@ main.content,
     text-align:left;
     padding-left: 0rem;
     color: #1c1816;  
-    font-family: "Caacupe One", sans-serif;  
+    font-family: "caacupe One", sans-serif;
 }
 
 .logoimage{
@@ -83,7 +83,8 @@ main.content,
 
 #quarto-header {
     border-bottom: #375c4a 5px solid;
-    font-family: "Special Gothic Condensed One", sans-serif;
+    font-family: "aleo", serif;
+    font-size: 1rem;
 }
 
 span.nav-link > span:nth-child(1) {
@@ -156,3 +157,10 @@ li.nav-item:nth-child(2) > a:nth-child(1){
     box-shadow: var(--shadow-elevation-medium);
 }
 
+.footer{
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-family: "Special Gothic Condensed One", sans-serif;
+}

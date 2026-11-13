@@ -13,7 +13,8 @@ website:
         href: about.qmd
       - text: Contact 
         href: contact.qmd 
-   
+  favicon: "https://raw.githubusercontent.com/annika-bergstrom/csv-data-/refs/heads/main/GCSFIfavicon.svg"
+ 
   navbar:
     background: "#426d58"
     title: false 
@@ -28,8 +29,7 @@ website:
     right: 
       - icon: github
         href: https://github.com/digbmc/GCSFI     
-  favicon: "https://raw.githubusercontent.com/annika-bergstrom/csv-data-/refs/heads/main/GCSFIfavicon.svg"
-
+  
 format:
   html:
     grid:

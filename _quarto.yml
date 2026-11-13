@@ -5,6 +5,7 @@ project:
 
 website:
   title: "GCSFI"
+  favicon: "GCSFIfavicon.svg"
   back-to-top-navigation: true
   page-footer: 
     background: "#426d58"
@@ -13,8 +14,7 @@ website:
         href: about.qmd
       - text: Contact 
         href: contact.qmd 
-  favicon: "https://raw.githubusercontent.com/annika-bergstrom/csv-data-/refs/heads/main/GCSFIfavicon.svg"
- 
+  
   navbar:
     background: "#426d58"
     title: false 

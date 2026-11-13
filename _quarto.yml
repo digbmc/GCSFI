@@ -28,7 +28,7 @@ website:
     right: 
       - icon: github
         href: https://github.com/digbmc/GCSFI     
-  favicon: "https://raw.githubusercontent.com/annika-bergstrom/csv-data-/refs/heads/main/GSCFIlogo3.svg"
+  favicon: "https://raw.githubusercontent.com/annika-bergstrom/csv-data-/refs/heads/main/GCSFIfavicon.svg"
 
 format:
   html:

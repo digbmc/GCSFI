@@ -152,26 +152,13 @@ li.nav-item:nth-child(2) > a:nth-child(1){
   gap: 2.5rem !important;
 }
 
-.accordion-button,
-.accordion-button:not(.collapsed) {
-  box-shadow: none;
-  outline: none;
-}
 
-.accordion {
-  --bs-accordion-active-bg: #FFE79E;      /* your peach */
-  --bs-accordion-active-color: #4a1f12;   /* your text */
-}
-
-.accordion-button:focus, .accordion-button:focus-visible, .accordion-item {
-  box-shadow: none !important;
-}
 
 #my-table{
     border:#b21f24 2px solid;
     margin-left:auto !important;
     margin-right:auto !important;
-    box-shadow: var(--shadow-elevation-medium);
+    box-shadow: var(--shadow-elevation-low);
 }
 
 .footer{
@@ -190,4 +177,43 @@ h1 {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+
+#download-raw {
+  background-color: #deb425;
+  border-color: #b21f24;
+  border-width: 2px;
+}
+
+#copy-url {
+  background-color: #deb425;
+  border-color: #b21f24;
+  border-width: 2px;
+}
+
+.accordion{
+  box-shadow: var(--shadow-elevation-low);
+}
+.accordion-body{
+  font-family: "Aleo", serif;
+  font-size: 1rem !important;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  outline: none;
+  font-size: 1.5rem !important;
+}
+
+.accordion-button:focus, .accordion-button:focus-visible, .accordion-item {
+  box-shadow: none !important;
+}
+
+.accordion-header {
+  --bs-accordion-active-bg: #FFE79E;  
+}
+
+h2, .h2 {
+  padding-bottom: 0rem;
 }

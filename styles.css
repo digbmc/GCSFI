@@ -97,7 +97,7 @@ li.nav-item:nth-child(2) > a:nth-child(1){
 }
 .navbar-nav.navbar-nav-scroll.me-auto {
     gap: 2rem;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 .title {
@@ -151,8 +151,6 @@ li.nav-item:nth-child(2) > a:nth-child(1){
   display: flex;
   gap: 2.5rem !important;
 }
-
-
 
 #my-table{
     border:#b21f24 2px solid;

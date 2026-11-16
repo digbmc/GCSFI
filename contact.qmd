@@ -5,5 +5,10 @@ format:
     anchor-sections: false
 ---
 ```{=html}
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYselXAPjfxd6hCA-wi_5Ij1o38ZHs4IBrXsS-6pBFb7LdTw/viewform?embedded=true" width="800" height="500" frameborder="0" marginheight="0" marginwidth="0" >Loading…</iframe>
 
+<br><br>
+<div class="button-container">
+<a type="button" class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdYselXAPjfxd6hCA-wi_5Ij1o38ZHs4IBrXsS-6pBFb7LdTw/viewform?usp=header">Open in another tab</a>
+</div>
 ```

@@ -111,6 +111,23 @@ li.nav-item:nth-child(2) > a:nth-child(1){
     gap: 2rem;
     margin-top: 2rem; 
 }
+
+.btn.btn-primary {
+  background-color:#8ea35a;
+  border-color:#8ea35a;
+}
+
+.btn.btn-primary:hover{
+  background-color: #426d58;
+  color: #f1eadc;
+}
+
+.btn.btn-primary:active{
+  color:#1c1816;
+  background-color: #E7E6DA;
+  border:#426d58 1px solid;
+}
+
 .btn.btn-outline-primary {
   color:#8ea35a;
   border-color:#8ea35a;
@@ -167,4 +184,10 @@ h2 {
 
 h1 { 
   font-size: 2.5rem;
+}
+
+#quarto-document-content > iframe:nth-child(3){
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }

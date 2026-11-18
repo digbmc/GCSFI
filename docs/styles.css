@@ -209,7 +209,8 @@ h1 {
 }
 
 .accordion-header {
-  --bs-accordion-active-bg: #FFE79E;  
+  --bs-accordion-active-bg: #FFE79E;
+  --bs-accordion-active-color: #1c1816;  
 }
 
 h2, .h2 {

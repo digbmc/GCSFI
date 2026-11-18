@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://digbmc.github.io/GCSFI/dataset.html</loc>
+    <lastmod>2026-11-18T15:54:03.493Z</lastmod>
+  </url>
+  <url>
     <loc>https://digbmc.github.io/GCSFI/about.html</loc>
-    <lastmod>2026-11-18T15:52:14.197Z</lastmod>
+    <lastmod>2026-11-18T15:54:03.493Z</lastmod>
   </url>
   <url>
     <loc>https://digbmc.github.io/GCSFI/contact.html</loc>
-    <lastmod>2026-11-18T15:52:14.197Z</lastmod>
-  </url>
-  <url>
-    <loc>https://digbmc.github.io/GCSFI/dataset.html</loc>
-    <lastmod>2026-11-18T15:52:14.198Z</lastmod>
+    <lastmod>2026-11-18T15:54:03.493Z</lastmod>
   </url>
   <url>
     <loc>https://digbmc.github.io/GCSFI/index.html</loc>
-    <lastmod>2026-11-18T15:52:14.206Z</lastmod>
+    <lastmod>2026-11-18T15:54:03.502Z</lastmod>
   </url>
 </urlset>

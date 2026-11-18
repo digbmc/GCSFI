@@ -7,7 +7,7 @@ project:
     - GCSFIfavicon.svg
 
 website:
-  title: "GCSFI"
+  title: "Greater Caribbean Short Fiction Index"
   favicon: GCSFIfavicon.svg
   back-to-top-navigation: true
   page-footer: 
@@ -35,14 +35,15 @@ website:
   
 format:
   html:
-    grid:
-      body-width: 1200px
     include-before-body: header.html
+    grid:
+      body-width: 1200px 
     theme:
       - united 
       - brand
     css: styles.css
     toc: false
+  
 
 
 

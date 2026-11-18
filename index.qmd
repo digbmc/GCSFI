@@ -2,7 +2,7 @@
 title: "Caribbean Short Fiction"
 ---
 
-![A map of the Caribbean, with publication locations of short stories in the archive highlighted red.](includes/caribbeanmap2.svg)
+![A map of the Caribbean, with publication locations of short stories in the archive highlighted red.](resources/caribbeanmap2.svg)
 
 TESTING QUARTO PUBLISH ACTION!
 

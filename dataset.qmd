@@ -19,7 +19,7 @@ import {generateTabulatorTableFromCSV} from "8bb63a6cde9addff"
 //| output: false
 generateTabulatorTableFromCSV(
   "#my-table",                          // CSS selector for the table container
-     "includes/GCSFIdata.csv",      // <-- plug in your CSV URL or file path here
+     "resources/GCSFIdata.csv",      // <-- plug in your CSV URL or file path here
 
   {
     displayedColumns: [

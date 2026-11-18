@@ -2,7 +2,9 @@ project:
   title: "GCSFI"
   type: website
   # output-dir: docs
-  resources: includes/
+  resources: 
+    - includes/
+    - GCSFIfavicon.svg
 
 website:
   title: "GCSFI"

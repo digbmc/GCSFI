@@ -2,6 +2,7 @@ project:
   title: "GCSFI"
   type: website
   output-dir: docs
+  resources: includes/
 
 website:
   title: "GCSFI"

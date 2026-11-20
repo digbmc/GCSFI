@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "dataset.html",
+    "href": "dataset.html",
+    "title": "GCSFI Dataset",
+    "section": "",
+    "text": "import {generateTabulatorTableFromCSV} from \"8bb63a6cde9addff\"\ngenerateTabulatorTableFromCSV(\n  \"#my-table\",                          // CSS selector for the table container\n     \"resources/GCSFIdata.csv\",      // &lt;-- plug in your CSV URL or file path here\n\n  {\n    displayedColumns: [\n      \"Title\", \n      \"Page #\",\n      \"Venue\", \n      \"Venue Editor\",\n      \"Published in\", \n      \"Issue #\",\n      \"Year\", \n      \"Author Name (first last as published)\",\n      \"Nationality or Associated Country\", \n      \"Gender\",\n      \"Plot Description\", \n      \"Palabras clave\",  \n      \"Scene setting\",\n      \"Characters\",\n      \"Diegetic level\",\n      \"Anachronisms\",\n      \"Issue URL\",\n             // columns to show (in order)\n      \n    ],\ncolumnWidths: {\n    \"Plot Description\": \"30px\",\n    // Add others if you want\n  },\n    numericColumns: [\n      \"Year\"],       // columns to treat as numbers (enables range filters)\n\n    categoryColumns: [\"\"],      // columns to treat as categories (enables dropdown filters)\n\n    sortColumns: [\"Venue\"],          // default sort column(s)\n    sortOrders: [\"asc\"],                 // \"asc\" or \"desc\" for each sort column\n    \n  }\n);\nhtml`&lt;div id='button-container2'&gt;\n  &lt;button id=\"download-raw\"&gt;&lt;i class=\"fas fa-download\"&gt;&lt;/i&gt;&lt;/i&gt; Download Full Data&lt;/button&gt;\n  &lt;button id=\"copy-url\"&gt;&lt;i class=\"fas fa-copy\"&gt;&lt;/i&gt; Copy Full Data URL&lt;/button&gt;\n&lt;/div&gt;`"
+  },
+  {
+    "objectID": "dataset.html#how-to-use",
+    "href": "dataset.html#how-to-use",
+    "title": "GCSFI Dataset",
+    "section": "How to Use",
+    "text": "How to Use\nThis is a bilingual dataset. Entries are in Spanish as much as is possible, though some are in English. These are:\n\nThe “Published in” column, for which locations are formatted as Library of Congress Subject Headings, and are thus in English.\nThe “Diagetic Level” and “Anachronisms” columns, which use the English terms for these literary devices.\n\nThe dataset depicted in the above viewer is generated from a larger file, which can be viewed by downloading the full data. Certain columns were excluded from the web version of this dataset for ease of use and veiwing. If you are interested in viewing the month and day of publication, accessing the Wikidata or VIAF URL for each author, or accessing additional metadata from each source used, you can do so by downloading the full data CSV.\nEach column can be used to sort or filter the data. When attempting to filter data, pay attention to the langauge of the column as well as the spelling, capitalization, and any accents."
+  },
+  {
+    "objectID": "dataset.html#columns",
+    "href": "dataset.html#columns",
+    "title": "GCSFI Dataset",
+    "section": "Columns",
+    "text": "Columns\n\n  \n    \n      \n        Venue \n      \n    \n    \n      \n        The title of the publication the listed short story appears in. The venues used in this project are Esfinge, Ámbito, Revista Ariel, Válvula, Cantaclaro, Hélices, Vórtice, Casa de las Américas, and Testimonio. Usually in Spanish. \n      \n    \n  \n  \n    \n      \n      Author Name \n      \n    \n    \n      \n      The visable author name corresponds to the name as it appears in the publication. The full dataset also contains a standardized author identidy where available, sourced from VIAF or Wikidata. Not all authors included in this dataset had a standarized identidy available. \n      \n    \n  \n  \n    \n      \n        Nationality and Gender\n      \n    \n    \n      \n        Nationality and gender were both determined based of the standardized author identidy, as available. For authors without a VIAF or Wikidata entry, nationality was left blank, and a determination of gender based on the name of the author was included. \n        \n        This was in order to allow for analysis of the percieved gender of those publishing in the included venues, with the acknowledgement that it does not allow for more expansive gender identidies, nor does it address the possiblity of authors publishing under pen names of a different gender than their own. Only one, primary nationality was included for similar data analysis reasons, though many authors included in this dataset were multi-national in some way. The name of the associated country is listed in Spanish. \n      \n    \n  \n\n    \n      \n        Plot\n      \n    \n    \n      \n       A brief plot summary including the main conflict of each story and expanding upon the listed themes. Plot descriptions are in Spanish. \n      \n    \n  \n  \n    \n      \n        Palabras Clave\n      \n    \n    \n      \n      Two to four keywords that describe the overarching themes of the story, chosen from a predetermined list. At times there may be a more specific thematic keyword that could be used, but the words used were selected for their applicabilty across stories and the frequency with which they appeared in the data collection process."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -12,27 +33,6 @@
     "title": "Contact Us",
     "section": "",
     "text": "Greater Caribbean Short Fiction Index\n\n\n\n\n\nLoading…\n\n\n\nOpen in another tab\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "dataset.html",
-    "href": "dataset.html",
-    "title": "GCSFI Dataset",
-    "section": "",
-    "text": "import {generateTabulatorTableFromCSV} from \"8bb63a6cde9addff\"\ngenerateTabulatorTableFromCSV(\n  \"#my-table\",                          // CSS selector for the table container\n     \"resources/GCSFIdata.csv\",      // &lt;-- plug in your CSV URL or file path here\n\n  {\n    displayedColumns: [\n      \"Title\", \n      \"Venue\", \n      \"Published in \", \n      \"Year\", \n      \"Author Name (first last as published)\",\n      \"Nationality or Associated Country\", \n      \"Plot Description\", \n      \"Thematic Keywords\",  \n      \"Scene setting\",\n      \"Characters\",\n      \"Issue URL\",\n             // columns to show (in order)\n      \n    ],\ncolumnWidths: {\n    \"Plot Description\": \"30px\",\n    // Add others if you want\n  },\n    numericColumns: [\n      \"Year\"],       // columns to treat as numbers (enables range filters)\n\n    categoryColumns: [\"\"],      // columns to treat as categories (enables dropdown filters)\n\n    sortColumns: [\"Venue\"],          // default sort column(s)\n    sortOrders: [\"asc\"],                 // \"asc\" or \"desc\" for each sort column\n    \n  }\n);\nhtml`&lt;div id='button-container2'&gt;\n  &lt;button id=\"download-raw\"&gt;&lt;i class=\"fas fa-download\"&gt;&lt;/i&gt;&lt;/i&gt; Download Full Data&lt;/button&gt;\n  &lt;button id=\"copy-url\"&gt;&lt;i class=\"fas fa-copy\"&gt;&lt;/i&gt; Copy Full Data URL&lt;/button&gt;\n&lt;/div&gt;`"
-  },
-  {
-    "objectID": "dataset.html#how-to-use",
-    "href": "dataset.html#how-to-use",
-    "title": "GCSFI Dataset",
-    "section": "How to Use",
-    "text": "How to Use\nAliquam arcu eros, rhoncus porttitor nisl in, dapibus congue lorem. Nam eu justo ut sem vestibulum pretium. Etiam id lectus lacinia, fringilla nisl sed, mollis ipsum. Cras sollicitudin turpis eget enim venenatis congue et eu neque. Nullam pretium erat at elit commodo, quis ultricies lacus semper. Duis at metus vulputate, sollicitudin ante sed, ultrices dui. Nunc maximus pretium tortor at lobortis. Pellentesque dictum suscipit risus, non sodales dui aliquam id. Sed fermentum est massa, ac interdum eros venenatis quis. Vestibulum posuere finibus massa, eget tristique ante sollicitudin id. Suspendisse tempus nisi laoreet, congue urna ac, tincidunt magna. Vestibulum rutrum ut leo vitae luctus. Proin urna quam, consectetur at imperdiet quis, blandit ut est."
-  },
-  {
-    "objectID": "dataset.html#columns",
-    "href": "dataset.html#columns",
-    "title": "GCSFI Dataset",
-    "section": "Columns",
-    "text": "Columns\n\n  \n    \n      \n        Venue \n      \n    \n    \n      \n        The venue column contains information about where the story was published. \n      \n    \n  \n  \n    \n      \n        Topic\n      \n    \n    \n      \n        Aliquam erat volutpat. Integer volutpat dictum massa, quis ullamcorper metus. Duis rutrum volutpat quam id dictum.\n      \n    \n  \n  \n    \n      \n        Plot\n      \n    \n    \n      \n        Suspendisse ut porta lorem, vel finibus tortor. Morbi a enim imperdiet, rutrum nunc eget, condimentum erat. Pellentesque maximus nulla ante. \n      \n    \n  \n\n    \n      \n        Themes\n      \n    \n    \n      \n       Nulla finibus accumsan justo, sit amet pulvinar sem aliquam nec. Cras nec porta tellus."
   },
   {
     "objectID": "index.html",

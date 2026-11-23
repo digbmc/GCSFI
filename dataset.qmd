@@ -43,14 +43,34 @@ generateTabulatorTableFromCSV(
              // columns to show (in order)
       
     ],
+
 columnWidths: {
     "Plot Description": "30px",
+    "Title": "20px",
+     "Author Name (first last as published)": "15px",
+    "Nationality or Associated Country": "15px",
+    "Palabras clave" : "30px",
+    "Characters" : "30px",
+    "Issue URL": "15px",
     // Add others if you want
   },
     numericColumns: [
-      "Year"],       // columns to treat as numbers (enables range filters)
+      "Year", 
+      "Page #",
+      "Issue #"],       // columns to treat as numbers (enables range filters)
 
-    categoryColumns: [""],      // columns to treat as categories (enables dropdown filters)
+    categoryColumns: [
+      "Venue",
+      "Published in",
+      "Gender", 
+      "Diegetic level",
+      "Anachronisms",
+      "Nationality or Associated Country"
+     ],      // columns to treat as categories (enables dropdown filters)
+    
+    linkColumns: [
+      "Issue URL"
+    ],
 
     sortColumns: ["Venue"],          // default sort column(s)
     sortOrders: ["asc"],                 // "asc" or "desc" for each sort column
@@ -67,7 +87,12 @@ columnWidths: {
 //| echo: false
 html`<div id='button-container2'>
   <button id="download-raw"><i class="fas fa-download"></i></i> Download Full Data</button>
-  <button id="copy-url"><i class="fas fa-copy"></i> Copy Full Data URL</button>
+</div><br>`
+
+html`<div id='button-container'>
+  <button id="download-csv"><i class="fas fa-download"></i></i> Download CSV</button>
+  <button id="download-json"><i class="fas fa-download"></i></i> Download JSON</button>
+  <button id="download-xlsx"><i class="fas fa-download"></i></i> Download Excel</button>
 </div>`
 ```
 <br><br>

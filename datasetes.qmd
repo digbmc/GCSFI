@@ -1,0 +1,179 @@
+---
+title: "GCSFI Dataset Español"
+format:
+  html:
+    anchor-sections: false
+---
+<div class="lang-button-container"><a type="button" class="btn btn-primary" id="langswitch" href=dataset.qmd>English</a></div>
+<br><br>
+<link href="https://unpkg.com/tabulator-tables@6.3.0/dist/css/tabulator.min.css" rel="stylesheet">
+<script src="https://unpkg.com/tabulator-tables@6.3.0/dist/js/tabulator.min.js"></script>
+<script src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>
+
+```{ojs}
+//| echo: false
+import {generateTabulatorTableFromCSV} from "8bb63a6cde9addff"
+```
+
+```{ojs}
+//| echo: false
+//| output: false
+generateTabulatorTableFromCSV(
+  "#my-table",                          // CSS selector for the table container
+     "resources/GCSFIdata.csv",      // <-- plug in your CSV URL or file path here
+
+  {
+    displayedColumns: [
+      "Title", 
+      "Page #",
+      "Venue", 
+      "Venue Editor",
+      "Published in", 
+      "Issue #",
+      "Year", 
+      "Author Name (first last as published)",
+      "Nationality or Associated Country", 
+      "Gender",
+      "Plot Description", 
+      "Palabras clave",  
+      "Scene setting",
+      "Characters",
+      "Diegetic level",
+      "Anachronisms",
+      "Issue URL",
+             // columns to show (in order)
+      
+    ],
+
+columnWidths: {
+    "Plot Description": "30px",
+    "Title": "20px",
+     "Author Name (first last as published)": "15px",
+    "Nationality or Associated Country": "15px",
+    "Palabras clave" : "30px",
+    "Characters" : "30px",
+    "Issue URL": "15px",
+    // Add others if you want
+  },
+    numericColumns: [
+      "Year", 
+      "Page #",
+      "Issue #"],       // columns to treat as numbers (enables range filters)
+
+    categoryColumns: [
+      "Venue",
+      "Published in",
+      "Gender", 
+      "Diegetic level",
+      "Anachronisms",
+      "Nationality or Associated Country"
+     ],      // columns to treat as categories (enables dropdown filters)
+    
+    linkColumns: [
+      "Issue URL"
+    ],
+
+    sortColumns: ["Venue"],          // default sort column(s)
+    sortOrders: ["asc"],                 // "asc" or "desc" for each sort column
+    
+  }
+);
+```
+
+:::{#my-table style="width: 1200px; height: 2000px; align: center;"} 
+:::
+<br>
+
+```{ojs}
+//| echo: false
+html`<div id='button-container2'>
+  <button id="download-raw"><i class="fas fa-download"></i></i> Descargar Data Completo</button>
+</div><br>`
+
+html`<div id='button-container'>
+  <button id="download-csv"><i class="fas fa-download"></i></i> Descargar CSV</button>
+  <button id="download-json"><i class="fas fa-download"></i></i> Descargar JSON</button>
+  <button id="download-xlsx"><i class="fas fa-download"></i></i> Descargar Excel</button>
+</div>`
+```
+<br><br>
+
+## Como Usar
+
+Esto es un bilingual dataset. Entries are in Spanish as much as is possible, though some are in English. These are: 
+
+* The "Published in" column, for which locations are formatted as Library of Congress Subject Headings, and are thus in English. 
+* The "Diagetic Level" and "Anachronisms" columns, which use the English terms for these literary devices.
+
+The dataset depicted in the above viewer is generated from a larger file, which can be viewed by downloading the full data. Certain columns were excluded from the web version of this dataset for ease of use and veiwing. If you are interested in viewing the month and day of publication, accessing the Wikidata or VIAF URL for each author, or accessing additional metadata from each source used, you can do so by downloading the full data CSV. 
+
+Each column can be used to sort or filter the data. When attempting to filter data, pay attention to the langauge of the column as well as the spelling, capitalization, and any accents. 
+
+## Las Columnas 
+
+```{=html}
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Venue 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+        The title of the publication the listed short story appears in. The venues used in this project are Esfinge, Ámbito, Revista Ariel, Válvula, Cantaclaro, Hélices, Vórtice, Casa de las Américas, and Testimonio. Usually in Spanish. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      Author Name 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+      The visable author name corresponds to the name as it appears in the publication. The full dataset also contains a standardized author identidy where available, sourced from VIAF or Wikidata. Not all authors included in this dataset had a standarized identidy available. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Nationality and Gender
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+        Nationality and gender were both determined based of the standardized author identidy, as available. For authors without a VIAF or Wikidata entry, nationality was left blank, and a determination of gender based on the name of the author was included. 
+        
+        This was in order to allow for analysis of the percieved gender of those publishing in the included venues, with the acknowledgement that it does not allow for more expansive gender identidies, nor does it address the possiblity of authors publishing under pen names of a different gender than their own. Only one, primary nationality was included for similar data analysis reasons, though many authors included in this dataset were multi-national in some way. The name of the associated country is listed in Spanish. 
+      </div>
+    </div>
+  </div>
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingfour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+        Plot
+      </button>
+    </h2>
+    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+       A brief plot summary including the main conflict of each story and expanding upon the listed themes. Plot descriptions are in Spanish. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingfive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+        Palabras Clave
+      </button>
+    </h2>
+    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample" style="">
+      <div class="accordion-body">
+      Two to four keywords that describe the overarching themes of the story, chosen from a predetermined list. At times there may be a more specific thematic keyword that could be used, but the words used were selected for their applicabilty across stories and the frequency with which they appeared in the data collection process.  
+      </div>
+    </div>
+  </div>
+</div>
+```

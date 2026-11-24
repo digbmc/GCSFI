@@ -238,4 +238,6 @@ h2, .h2 {
   padding-bottom: 0rem;
 }
 
-
+.lang-button-container {
+   text-align: center;
+}
